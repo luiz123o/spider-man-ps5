@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="dev finances" src="https://github.com/luiz123o/finances/blob/staging/assets/logo.svg" />
+    <img alt="spider-man" src="https://github.com/luiz123o/spider-man-ps5/blob/staging/assets/svg/spider-logo.svg" />
     <br>
    
 </h1>
