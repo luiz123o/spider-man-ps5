@@ -1,23 +1,45 @@
 .container {
-    max-width: 144rem;
-    margin: 0 auto;
+    max-width: 114rem;
     padding: 3.6rem 1.6rem;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    overflow: hidden;
+    flex-direction: row;
+    overflow: none;
+    height: 100vh;
+    @include responsive() {
+        flex-direction: column;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 .container-item-1 {
-    max-width: 57.6rem;
+    max-width: 50.6rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .spider-man {
-    width: 150%;
-    transform: translate3d(-22rem, 0, 0);
+    width: 120%;
+    transform: translate3d(-10rem, 0, 0);
+    @include responsive() {
+        width: 100%;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .btn {
@@ -95,4 +117,41 @@
             width: 101%;
         }
     }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background: linear-gradient(181.47deg, #0A0c10 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0A0c10 73.17%);
+    }
+}
+
+.bg-loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(225deg, $red 0%, $red-dark 100%);
+    overflow: hidden;
 }
