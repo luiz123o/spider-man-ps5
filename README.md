@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://spider-man-ps5-virid.vercel.app/" target="_blank">
-    <img alt="Demo on vercel" height="96" src="https://github.com/luiz123o/spider-man-ps5/blob/staging/assets/img/Capturar.PNG">
+    <img alt="Demo on vercel" height="200" src="https://github.com/luiz123o/spider-man-ps5/blob/staging/assets/img/Capturar.PNG">
     <p align="center">Demo</p>
   </a>
 </p>
